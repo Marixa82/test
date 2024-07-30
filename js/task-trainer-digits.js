@@ -130,10 +130,13 @@
 // }
 
 // Task16 Даны два целых числа. Найдите остаток от деления первого числа на второе.
-
+// v1
 // let num1 = 12;
 // let num2 = 6;
 // console.log(num1 % num2);
-
-// 
+// v2
+//  function restDigit (a, b){
+//     return a % b;
+//  }
+//  alert (`12 % 4 = ${restDigit(12, 4)}`)
 
