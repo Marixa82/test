@@ -28,3 +28,25 @@ function getRandomInt2 () {
     el2.textContent = getRand;
 }
 getRandomInt2();
+
+// Task 03
+// Не забываем, что функции можно вызывать внутри другой функции. Напишите функцию t3, которая срабатывает при клике по кнопке .b-3, и запускает фукнции hello, и f2021. Если все сделано верно, то внутри .out-3 вы увидите текст hello 2021.
+
+function t3 () {
+    
+    function hello() {
+        let hello1 = 'Hello'
+return hello1
+    }
+   
+    function f2021(){
+let year = '2021'
+return year
+    }
+  
+   document.querySelector('.b-3').addEventListener('click', function(){
+    let result = hello() + ' ' + f2021();
+    document.querySelector('.b-3').textContent = result;
+   })
+}
+t3()
