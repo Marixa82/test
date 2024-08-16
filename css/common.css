@@ -62,7 +62,7 @@ color: #fafafa;
   flex-direction: column;
   row-gap: 10px;
 }
-.task2Elements, .task3Elements{
+.task2Elements, .task3Elements, .taskMinMaxElements{
   display: flex;
   flex-direction: column;
   row-gap: 10px;
@@ -89,4 +89,16 @@ background-color:chartreuse;
 .b-2{
   width: 100px;
   background-color:chocolate;
+}
+.b-4{
+  width: 100px;
+  background-color:rgb(210, 30, 60);
+}
+.out-5{
+  display: flex;
+ justify-content: center;
+background-color:burlywood;
+ width: 100px;
+ padding: 10px;
+ margin-bottom: 10px;
 }
