@@ -50,3 +50,15 @@ return year
    })
 }
 t3()
+
+// Напишите функцию t1, которая принимает два аргумента и выводит в .out-1 случайное целое число от первого аргумента(включительно) до второго(включительно). Функция запускается по кнопке .b-1. Обратите внимание на запуск функции. Чтобы передать аргументы, нам пришлось обернуть функцию в анонимную.
+
+function t1(x, y, elem){
+    
+    document.querySelector('.b-1').addEventListener('click', function(){
+        let randomDigit = Math.floor(x + Math.random() * (y + 1 - x));
+    elem = document.querySelector('.out-3').textContent = randomDigit
+       
+       })
+}
+t1(100, 250);
