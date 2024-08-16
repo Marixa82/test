@@ -62,6 +62,14 @@ color: #fafafa;
   flex-direction: column;
   row-gap: 10px;
 }
+.task2Elements, .task3Elements{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  /* width: auto; */
+  margin-bottom: 10px;
+  /* border: 2px solid black; */
+}
 .out-3{
   display: flex;
  justify-content: center;
@@ -69,4 +77,16 @@ background-color: blueviolet;
  width: 100px;
  padding: 10px;
  margin-bottom: 10px;
+}
+.out-4{
+  display: flex;
+ justify-content: center;
+background-color:chartreuse;
+ width: 100px;
+ padding: 10px;
+ margin-bottom: 10px;
+}
+.b-2{
+  width: 100px;
+  background-color:chocolate;
 }
