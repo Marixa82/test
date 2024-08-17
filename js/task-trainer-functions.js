@@ -46,7 +46,7 @@ return year
   
    document.querySelector('.b-3').addEventListener('click', function(){
     let result = hello() + ' ' + f2021();
-    document.querySelector('.b-3').textContent = result;
+    document.querySelector('.out').innerHTML = result;
    })
    
 }
@@ -58,7 +58,7 @@ function t1(x, y){
     
     document.querySelector('.b-1').addEventListener('click', function(){
         let randomDigit = Math.floor(x + Math.random() * (y + 1 - x));
-        document.querySelector('.out-3').textContent = randomDigit
+        document.querySelector('.out-3').innerHTML = randomDigit
 })
 }
 t1(100, 250);
@@ -70,7 +70,7 @@ function t2(x, y, elem){
     
     document.querySelector('.b-2').addEventListener('click', function(){
         let randomDigit = Math.floor(x + Math.random() * (y + 1 - x));
-    elem = document.querySelector('.out-4').textContent = randomDigit
+    elem = document.querySelector('.out-4').innerHTML = randomDigit
 })
 }
 t2(300, 500);
@@ -80,8 +80,25 @@ t2(300, 500);
 function t4(x1 = 0, y1 = 100){
     document.querySelector('.b-4').addEventListener('click', function(){
         let randomDigit = Math.floor(x1 + Math.random() * (y1 + 1 - x1));
-        document.querySelector('.out-5').textContent = randomDigit
+        document.querySelector('.out-5').innerHTML = randomDigit
     })
 
 }
 t4(15, 200);
+
+// Напишите функцию t5, которая возвращает сумму переданных ей аргументов a и b.
+
+function t5(a, b) {
+    return a + b;
+}
+console.log(t5(2, 8));
+
+// Напишите функцию t6, которая принимает 2 аргумента и возвращает больший из них.
+
+function t6(a, b){
+
+return Math.max(a, b);
+}
+console.log(t6(10,5)) 
+
+// На странице есть checkbox .ch-3. Напишите функцию, которая возвращает его value если он выбран и false если не выбран.
