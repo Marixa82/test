@@ -47,6 +47,14 @@ button {
   align-items: center;
   margin-bottom: 10px;
 }
+.out {
+  width: 100px;
+  background-color: rgb(0, 123, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
 
 .b-3 {
   width: 100px;
@@ -57,12 +65,12 @@ color: #fafafa;
   width: 100px;
   background-color:aquamarine;
 }
-.btn{
+/* .btn{
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-}
-.task2Elements, .task3Elements, .taskMinMaxElements{
+} */
+.task2Elements, .task3Elements, .taskMinMaxElements, .taskMessage{
   display: flex;
   flex-direction: column;
   row-gap: 10px;
