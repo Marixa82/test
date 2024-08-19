@@ -101,4 +101,17 @@ return Math.max(a, b);
 }
 console.log(t6(10,5)) 
 
-// На странице есть checkbox .ch-3. Напишите функцию, которая возвращает его value если он выбран и false если не выбран.
+// // На странице есть checkbox .ch-3. Напишите функцию, которая возвращает его value если он выбран и false если не выбран.
+function getCheckboxValue() {
+    const checkbox = document.querySelector('.ch-3');
+    checkbox.addEventListener('change', function(){
+let checked = checkbox.checked
+if (checked) {
+        return console.log(checkbox.value) ;
+    } else {
+        return console.log(false);
+    }
+    })
+    
+}
+getCheckboxValue()
