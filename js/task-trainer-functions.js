@@ -173,7 +173,7 @@ return Math.max(a, b);
 }
 console.log(t6(10,5)) 
 
-// // На странице есть checkbox .ch-3. Напишите функцию, которая возвращает его value если он выбран и false если не выбран.
+ // На странице есть checkbox .ch-3. Напишите функцию, которая возвращает его value если он выбран и false если не выбран.
 const getCheckboxValue = () =>{
     const checkbox = document.querySelector('.ch-3');
     checkbox.addEventListener('change', ()=>{
@@ -187,3 +187,19 @@ if (checked) {
     
 }
 getCheckboxValue()
+
+// Допишите функцию callBack1 такую, что принимает элементы массива из map и возвращает их возведенные в 3 степень.
+const arr1 = [2, 4, 8, 5, 10]
+function getArray (arr, myFunc) {
+    const newArr = arr.map(num => num * 3);
+    myFunc(newArr);
+}
+function callBack1(arr){
+    let str = '';
+for(let i =0; i < arr.length; i++){
+    str += arr[i] + ' ';
+}
+     console.log(str);
+     console.log(arr);
+}
+getArray(arr1, callBack1);
