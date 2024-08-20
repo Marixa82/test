@@ -189,12 +189,25 @@ if (checked) {
 getCheckboxValue()
 
 // Допишите функцию callBack1 такую, что принимает элементы массива из map и возвращает их возведенные в 3 степень.
-const arr1 = [2, 4, 8, 5, 10]
-function getArray (arr, myFunc) {
-    const newArr = arr.map(num => num * 3);
+const arr1 = [2, 4, 8, 5, 10];
+
+function getArray(arr, myFunc) {
+    const newArr = arr.map(myFunc);
+    console.log(newArr); // Виводимо новий масив з елементами, піднесеними до третього степеня
+}
+
+function callBack1(num) {
+    return num ** 3;
+}
+
+getArray(arr1, callBack1);
+
+const arr2 = [2, 4, 8, 5, 10]
+function getArray2 (arr, myFunc) {
+    const newArr = arr.map(num => num ** 3);
     myFunc(newArr);
 }
-function callBack1(arr){
+function callBack2(arr){
     let str = '';
 for(let i =0; i < arr.length; i++){
     str += arr[i] + ' ';
@@ -202,4 +215,6 @@ for(let i =0; i < arr.length; i++){
      console.log(str);
      console.log(arr);
 }
-getArray(arr1, callBack1);
+getArray2(arr2, callBack2);
+
+// Допишите анонимную стрелочную функцию внутри map такую, что принимает элементы массива из map и возвращает их возведенные в 3 степень.
