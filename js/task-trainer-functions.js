@@ -189,6 +189,17 @@ if (checked) {
 getCheckboxValue()
 
 // Допишите функцию callBack1 такую, что принимает элементы массива из map и возвращает их возведенные в 3 степень.
+function callBack(num) {
+    return num ** 3;
+}
+const arr = [2, 4, 8, 5, 10];
+
+const newArr = arr.map(callBack);
+
+console.log(newArr);
+
+
+// Допишите анонимную стрелочную функцию внутри map такую, что принимает элементы массива из map и возвращает их возведенные в 3 степень.
 const arr1 = [2, 4, 8, 5, 10];
 
 function getArray(arr, myFunc) {
@@ -202,19 +213,32 @@ function callBack1(num) {
 
 getArray(arr1, callBack1);
 
-const arr2 = [2, 4, 8, 5, 10]
-function getArray2 (arr, myFunc) {
-    const newArr = arr.map(num => num ** 3);
-    myFunc(newArr);
-}
-function callBack2(arr){
-    let str = '';
-for(let i =0; i < arr.length; i++){
-    str += arr[i] + ' ';
-}
-     console.log(str);
-     console.log(arr);
-}
-getArray2(arr2, callBack2);
+// 
+// const arr2 = [2, 4, 8, 5, 10]
+// function getArray2 (arr, myFunc) {
+//     const newArr = arr.map(num => num ** 3);
+//     myFunc(newArr);
+// }
 
-// Допишите анонимную стрелочную функцию внутри map такую, что принимает элементы массива из map и возвращает их возведенные в 3 степень.
+// function callBack2(arr){
+//     let str = '';
+// for(let i =0; i < arr.length; i++){
+//     str += arr[i] + ' ';
+// }
+//      console.log(str);
+//      console.log(arr);
+// }
+// getArray2(arr2, callBack2);
+
+
+
+// Допишите функцию callBack3 такую, что принимает элементы массива из filter и возвращет true если это число.
+
+
+function callback3(num){
+return typeof num === 'number' && !isNaN(num);
+}
+const arr3 = [1, 'b', 2, 'gpt'];
+
+const newNum = arr3.filter(callback3);
+console.log(newNum)
