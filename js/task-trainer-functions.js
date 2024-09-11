@@ -242,3 +242,12 @@ const arr3 = [1, 'b', 2, 'gpt'];
 
 const newNum = arr3.filter(callback3);
 console.log(newNum)
+
+// bind
+function sum(a,b,c){
+    console.log(arguments);
+    this.innerHTML = a + b + c;
+}
+const sum1 = sum.bind(document.querySelector('.out-6'), 100)
+document.querySelector('.b-5').addEventListener('click', ()=>{sum1(3,5,8);
+})
