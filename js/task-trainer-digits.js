@@ -160,3 +160,15 @@ const number =(a)=>{
 };
 console.log(number(1));
 console.log(number(-2));
+
+// Створіть функцію для визначення, чи є число парним.
+// Функція має приймати як вхідний параметр число, і повертати true(bool), якщо число парне, або false(bool) - якщо непарне.
+
+const numberPare=(num)=>{
+    if(num % 2){
+        return false
+    }
+    return true
+};
+console.log(numberPare(3));
+console.log(numberPare(4)) ;
